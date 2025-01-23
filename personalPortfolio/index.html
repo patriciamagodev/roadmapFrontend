@@ -18,87 +18,100 @@
  
      <!-- FavIcon -->
      <link rel="icon" href="" type="image/x-icon">
- 
-     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./favicon.png" alt="">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./articles.html">Articles</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+        <nav id="navbar">
+            <div class="logo__header">
+                <img src="./favicon.png" alt="">
+                <p>Patricia Mago</p>
+            </div>
+            <ul class="navlinks__header">
+                <li><a class="navlinks__items" href="#home">Home</a></li>
+                <li><a class="navlinks__items" href="./projects.html">Projects</a></li>
+                <li><a class="navlinks__items" href="./articles.html">Articles</a></li>
+                <li><a class="navlinks__items" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="home">
         <h1>Frontend Developer</h1>
         <p>HTML only with proper layout, no styling</p>
     </section>
     <main>
-        <aside>
-            <nav>
-                <header>
-                    <h2>Projects</h2>
-                </header>
-                <ul>
-                    <li>HTML Only Portfolio</li>
-                    <li>Calculator</li>
-                    <li>Quiz App</li>
-                    <li>Countdown Timer</li>
-                    <li>Product Upcomming Page</li>
-                </ul>
-            </nav>
-        </aside>
-        
-        <section>
-            <article>
-                <h2>Work Experience</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <a href="">Visit my Profile</a>
-            </article>
-            <article>
-                <h2>OpenSource Work</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <a href="">Visit my GitHub Profile</a>
-            </article>
-        </section>
-        
-        <section>
-            <article>
-                <h2>Education</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                <p>Courses I Took</p>
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-                <a href=""></a>
-            </article>
-        </section>
-
-        <section>
-            <h2></h2>
-            <div>
-                <p>John doe was a brilliant student</p>
-                <p>Peter Parker</p>
-                <p>Superhero</p>
-            </div>
-            <div>
-                <p>John doe was a brilliant student</p>
-                <p>Peter Parker</p>
-                <p>Superhero</p>
-            </div>
-            <div>
-                <p>John doe was a brilliant student</p>
-                <p>Peter Parker</p>
-                <p>Superhero</p>
+        <div id="main__container">
+            <aside>
+                <nav>
+                    <header>
+                        <h2>Projects</h2>
+                    </header>
+                    <ol>
+                        <li>HTML Only Portfolio</li>
+                        <li>Calculator</li>
+                        <li>Quiz App</li>
+                        <li>Countdown Timer</li>
+                        <li>Product Upcomming Page</li>
+                    </ol>
+                </nav>
+            </aside>
+            
+            <section>
+                <article>
+                    <h2>Work Experience</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <a href="">Visit my Profile</a>
+                </article>
+                <article>
+                    <h2>OpenSource Work</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <a href="">Visit my GitHub Profile</a>
+                </article>
+            </section>
+            
+            <section>
+                <article>
+                    <h2>Education</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <p>Courses I Took</p>
+                    <ol>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                        <li>f</li>
+                    </ol>
+                    <a href=""></a>
+                </article>
+            </section>
+        </div>
+        <section id="reviews">
+            <header id="reviews__header">
+                <h2>Reviews</h2>
+            </header>
+            <div id="reviews__container">
+                <div class="reviews__cards">
+                    <p>John doe was a brilliant student</p>
+                    <p>Peter Parker</p>
+                    <p>Superhero</p>
+                </div>
+                <div class="reviews__cards">
+                    <p>John doe was a brilliant student</p>
+                    <p>Peter Parker</p>
+                    <p>Superhero</p>
+                </div>
+                <div class="reviews__cards">
+                    <p>John doe was a brilliant student</p>
+                    <p>Peter Parker</p>
+                    <p>Superhero</p>
+                </div>
             </div>
         </section>
     </main>
