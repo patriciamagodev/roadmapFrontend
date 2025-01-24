@@ -4,103 +4,111 @@
     box-sizing: border-box;
 }
 
-html {
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #ffffff;
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: #eadbff;
+/* Estilos para el header */
+.header__navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#navbar {
+/* Estilos para la barra de navegación */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.logo__header {
-    display: flex;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #333;
-    
-}
-
-.navlinks__header {
-    display: flex;
-    list-style: none; 
-    margin-left: 20px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #333;
-    cursor: pointer;   
-}
-
-.navlinks__items {
+/* Estilos para el logo */
+.navbar__logo-link {
     text-decoration: none;
-    color: #333;
-    margin: 0 5px;
-}
-
-#home {
-    width: 100%;
-    height: 75vh;
-    background-color: aliceblue;
-    
-}
-
-#home h1 {
-    padding-top: 130px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    text-align: center;
-}
-
-#home p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
-    text-align: center;
-    margin-top: 10px;
-}
-
-#main__container {
+    color: #fff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#reviews__header > h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #333;
-    text-align: center;
-}
-
-#reviews__container {
+.navbar__logo-link figure {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
 
-.reviews__cards {
+.navbar__logo-link img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar__logo-link figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar__links {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__links li {
+    margin-left: 20px;
+}
+
+.navbar__links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar__links li a:hover {
+    color: #ff6347; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .navbar__logo-link figure {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar__logo-link {
+        flex-direction: column; /* Apila el logo y el nombre verticalmente */
+        align-items: center; /* Centra el logo y el nombre */
+        text-align: center; /* Centra el texto */
+    }
+
+    .navbar__logo-link img {
+        margin-right: 0; /* Elimina el margen derecho del logo */
+        margin-bottom: 10px; /* Añade espacio debajo del logo */
+    }
+
+    .navbar__links {
+        flex-direction: row; /* Apila los enlaces verticalmente */
+        align-items: center; /* Centra los enlaces */
+        margin-top: 10px; /* Añade espacio arriba de los enlaces */
+        gap: 20px; /* Añade espacio entre los enlaces */
+    }
+
+    .navbar__links li {
+        margin-left: 0; /* Elimina el margen izquierdo de los elementos de la lista */
+        margin-bottom: 10px; /* Añade espacio entre los enlaces */
+    }
 }
