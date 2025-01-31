@@ -28,103 +28,111 @@
 </head>
 <body>
 
-    <header class="header__navbar">
-        <nav class="navbar">
-          <a href="./index.html" class="navbar__logo-link">
-            <figure>
-              <img src="./favicon.png" alt="Logo de Patricia Mago">
-              <figcaption>Patricia Mago</figcaption>
-            </figure>
-          </a>
-          <ul class="navbar__links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./articles.html">Articles</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
+    <header class="navbar__container">
+        <nav class="navbar__menu">
+            <a href="./index.html" class="navbar__logo">
+                <figure>
+                    <img src="./favicon.png" alt="Foto de Patricia Mago">
+                    <figcaption>Patricia Mago</figcaption>
+                </figure>
+            </a>    
+            <ul class="navbar__menu_items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Frontend Developer</h1>
-        <p>Welcome to my portfolio! I specialize in creating responsive and interactive web applications using HTML, CSS, and JavaScript.</p>
+    <section class="hero">
+        <header class="hero__header">
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </header>
     </section>
-    
+
     <main>
-        <div id="main__container">
-            <aside>
-                <nav>
-                    <header>
-                        <h2>Projects</h2>
-                    </header>
-                    <ol>
-                        <li>HTML Only Portfolio</li>
-                        <li>Calculator</li>
-                        <li>Quiz App</li>
-                        <li>Countdown Timer</li>
-                        <li>Product Upcomming Page</li>
-                    </ol>
-                </nav>
+        <div class="main__container">
+            <aside class="projects__container">
+                <h2 class="main__titles">Projects</h2>
+                <ul class="projects__list">
+                    <li>HTML Only Portfolio</li>
+                    <li>Calculator</li>
+                    <li>Quiz App</li>
+                    <li>Countdown Timer</li>
+                    <li>Product Upcoming Page</li>
+                </ul>
             </aside>
-            
-            <section>
-                <article>
-                    <h2>Work Experience</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                    <a href="">Visit my Profile</a>
+
+            <section class="work__container">
+                    <h2 class="main__titles">Work Experience</h2>
+                <article class="experience__one">
+                    <h3>roadmap.sh</h3>
+                    <p>Solved all the frontend projects</p>
+                    <a href="#">Visit my Profile</a>
                 </article>
-                <article>
-                    <h2>OpenSource Work</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                    <a href="">Visit my GitHub Profile</a>
+                <article class="experience__two">    
+                    <h3>OpenSource Work</h3>
+                    <p>Contributed to 50 open-source projects. Made my own projects with 200 GitHub Stars.</p>
+                    <a href="#">Visit my GitHub Profile</a>
                 </article>
             </section>
-            
-            <section>
-                <article>
-                    <h2>Education</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                    <p>Courses I Took</p>
-                    <ol>
-                        <li>f</li>
-                        <li>f</li>
-                        <li>f</li>
-                        <li>f</li>
-                        <li>f</li>
-                        <li>f</li>
-                    </ol>
-                    <a href=""></a>
-                </article>
+
+            <section class="education">
+                <h2 class="main__titles">Education</h2>
+                <div class="education__container">
+                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                    <span>Courses I took:</span>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Web Engineering</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Computer Graphics</li>
+                        <li>Database Management Systems</li>
+                        <li>Distributed Database Systems</li>
+                        <li>Discrete Mathematics</li>
+                    </ul>
+                </div>
             </section>
         </div>
-        <section id="reviews">
-            <header id="reviews__header">
-                <h2>Reviews</h2>
-            </header>
-            <div id="reviews__container">
-                <div class="reviews__cards">
-                    <p>John doe was a brilliant student</p>
-                    <p>Peter Parker</p>
-                    <p>Superhero</p>
-                </div>
-                <div class="reviews__cards">
-                    <p>John doe was a brilliant student</p>
-                    <p>Peter Parker</p>
-                    <p>Superhero</p>
-                </div>
-                <div class="reviews__cards">
-                    <p>John doe was a brilliant student</p>
-                    <p>Peter Parker</p>
-                    <p>Superhero</p>
-                </div>
+
+        <section class="reviews">
+            <h2 class="reviews__title">Reviews from my Teachers</h2>
+            <div class="review-list">
+                <article class="review-box" role="listitem">
+                    <blockquote>
+                        "John Doe was a brilliant student; always stood out with his assignments."
+                    </blockquote>
+                    <p class="reviewer">
+                        <cite>Jane Doe</cite> - Assistant Professor
+                    </p>
+                </article>
+                <article class="review-box" role="listitem">
+                    <blockquote>
+                        "John Doe was a brilliant student; always stood out with his assignments."
+                    </blockquote>
+                    <p class="reviewer">
+                        <cite>Jane Doe</cite> - Assistant Professor
+                    </p>
+                </article>
+                <article class="review-box" role="listitem">
+                    <blockquote>
+                        "John Doe was a brilliant student; always stood out with his assignments."
+                    </blockquote>
+                    <p class="reviewer">
+                        <cite>Jane Doe</cite> - Assistant Professor
+                    </p>
+                </article>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>
-            All Rigths Reserved &copy; 2025
-        </p>
+        <p>© all rights reserved 2025</p>
     </footer>
-    
+
 </body>
 </html>

@@ -3,163 +3,183 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #ffffff;
     font-size: 16px;
-    scroll-behavior: smooth;
+    line-height: 1.5;
 }
 
-/* Estilos para el header */
-.header__navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos para la barra de navegación */
-.navbar {
+/* Navbar */
+.navbar__menu {
+    width: 100%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 1rem 4rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
-
-/* Estilos para el logo */
-.navbar__logo-link {
+.navbar__menu a {
     text-decoration: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
 }
-
-.navbar__logo-link figure {
+.navbar__logo figure {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    
 }
-
-.navbar__logo-link img {
+.navbar__logo img {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
-
-.navbar__logo-link figcaption {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* Estilos para los enlaces de navegación */
-.navbar__links {
-    list-style: none;
+.navbar__menu_items {
     display: flex;
-    margin: 0;
-    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    list-style: none;
+}
+.navbar__menu_items li {
+    margin-right: 1rem;
 }
 
-.navbar__links li {
-    margin-left: 20px;
-}
-
-.navbar__links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.navbar__links li a:hover {
-    color: #ff6347; /* Cambia el color al pasar el mouse */
-}
-
-/* Estilos responsivos del Header NavBar*/
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Apila los elementos verticalmente */
-        align-items: center; /* Centra los elementos */
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .navbar__logo-link figure {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar__logo-link {
-        flex-direction: column; /* Apila el logo y el nombre verticalmente */
-        align-items: center; /* Centra el logo y el nombre */
-        text-align: center; /* Centra el texto */
-    }
-
-    .navbar__logo-link img {
-        margin-right: 0; /* Elimina el margen derecho del logo */
-        margin-bottom: 10px; /* Añade espacio debajo del logo */
-    }
-
-    .navbar__links {
-        flex-direction: row; /* Apila los enlaces verticalmente */
-        align-items: center; /* Centra los enlaces */
-        margin-top: 10px; /* Añade espacio arriba de los enlaces */
-        gap: 20px; /* Añade espacio entre los enlaces */
-    }
-
-    .navbar__links li {
-        margin-left: 0; /* Elimina el margen izquierdo de los elementos de la lista */
-        margin-bottom: 10px; /* Añade espacio entre los enlaces */
-    }
-}
-
-#home {
+/* Hero */
+.hero {
     width: 100%;
-    height: 470px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./homeImageUnplash.jpg');
-    background-size: cover;
-    background-position: center;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-#home>h1 {
-    
-    font-size: 3em;
-    margin-bottom: 20px;
+    padding-bottom: 4.5rem;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(./homeImageUnplash.jpg);
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
 }
-
-#home>p {
-    width: 60vw;
-    margin: 0 auto;
-    font-size: 1.5em;
-    color: #ffffff;
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.hero p {
+    font-size: 1.5rem;
 }
 
-/* Estilos responsivos del Home*/
-@media (max-width: 480px) {
-    #home {
-        height: 250px; /* Reduce aún más la altura */
-    }
-
-    #home > h1 {
-        font-size: 1.5em; /* Tamaño de fuente más pequeño para h1 */
-    }
-
-    #home > p {
-        width: 80vw; /* Reduce el ancho del párrafo */
-        font-size: 1em; /* Tamaño de fuente más pequeño para párrafo */
-    }
+.main__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: white;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 }
 
-#main__container {
-    width: 80vw;
-    max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 20px;
+.main__titles, .reviews__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0rem 1rem 3rem;
+}
+
+.projects__container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.projects__container ul {
+    list-style: none;
+}
+.projects__list li {
+    border-bottom: 4px solid black;
+    padding: 1rem 3rem;
+}
+.projects__list li:last-child {
+    border-bottom: none;
+}
+
+.work__container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 4px solid black; 
+    border-right: 4px solid black;    
+}
+.experience__one {
+    text-align: left;
+    padding: 0.5rem 3rem 2rem 3rem;
+    border-bottom: 4px solid black;
+}
+.experience__two {
+    text-align: left;
+    padding: 1rem 3rem 2rem 3rem;
+}
+
+.education {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.education__container {
+    padding: 0.5rem 3rem 2rem 3rem;
+}
+.education__container span {
+    line-height: 3.5rem;
+}
+.education ul {
+    padding-left: 1.5rem;
+}
+
+/* Reviews */
+.reviews {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 2.5rem 0rem 2.5rem;
+}
+.review-box {
+    width: 30%;
+    height: 75%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    margin: 2rem 2rem 3rem 2rem;
+    border: 4px solid black;
+    border-radius: 25px;
+    gap: 1rem;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
 }
