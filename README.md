@@ -13,3 +13,7 @@ https://roadmap.sh/projects/basic-html-website
 3.- Personal Portfolio <br>
 https://pmdevpersonalportfolio.netlify.app/ <br>
 https://roadmap.sh/projects/portfolio-website
+
+4.- Changelog Component <br>
+https://pmdevchangelogcomponent.netlify.app/ <br>
+https://roadmap.sh/projects/changelog-component
