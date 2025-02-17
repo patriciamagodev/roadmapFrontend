@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 500 ;
+    line-height: 1.2rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+  gap: 1.5rem;
+  background-color: white;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 300px;
+  height: 240px; /* Altura del contenedor */
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.testimonials__top, .testimonials__middle, .testimonials__bottom {
+  width: 100%;
+}
+
+.topCard__left {
+  border: none;
+  width: 300px; 
+}
+.topCard__left div:first-child {
+  border: 3px solid black;
+  border-radius: 15px;
+}
+.topCard__info {
+  background-color: black;
+  color: white;
+}
+.topCard__info p:first-child {
+  padding: 1rem ;
+}
+.topCard__info p:nth-child(2) {
+  padding: 0rem 1rem 1rem 1rem;
+  
+}
+.topCard-triangulo {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* Ajusta los siguientes valores para el tamaño y orientación del triángulo */
+  border-width: 15px 15px 0px 15px; /* Triángulo apuntando hacia arriba */
+  border-color: black transparent transparent transparent; /* Color del triángulo */
+  margin-right: 220px;
+  margin-bottom: 5px;
+}
+.topCard__id {
+  display: flex;
+}
+.topCard__id figure {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem 0rem 0.3rem;
+  gap: 1rem;
+}
+.topCard__id img, .topCard__right img, .testimonials__bottom img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.topCard__id figcaption p, .topCard__right figcaption p  {
+  margin-top: 0.5rem;
+}
+
+.topCard__right {
+  width: 300px; 
+  background-color: white;
+  color: black;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.topCard__right figure {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0rem 1rem;
+  gap: 1rem;
+}
+
+
+.middleCard__left {
+  width: 220px;
+  position: relative; /* Necesario para el centrado absoluto */
+  overflow: hidden; /* Recorta la imagen si es más grande que el contenedor */
+  border: none;
+}
+.middleCard__left img {
+  position: absolute; /* Posiciona la imagen dentro del contenedor */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
+  width: 100%; /* Ocupa todo el ancho */
+  height: 101%; /* Ocupa todo el alto */
+  object-fit: cover; /* Cubre todo el contenedor, recortando si es necesario */
+  border-radius: 15px;
+}
+
+.middleCard__right {
+  display: flex;
+  width: 380px;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.middleCard__icons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 154px;
+  gap: 3px;
+}
+.middleCard__info p {
+  padding-top: 0.5rem;
+}
+
+.middleCard__info p:first-of-type {
+  color: gray;
+}
+
+
+.testimonials__bottom article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 622px;
+}
+
+.bottomCard p {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+.bottomCard h3 {
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.bottomCard__pictures {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 0rem 0rem 0rem;
+  gap: 1rem;
+}
+
+.bottomCard__pictures .bottomCard__icons {
+  width: 20px;
+  height: 20px;
+}
+
+.bottomCard__pictures .bottomCard__pictures-blur {
+  width: 55px;
+  height: 55px;
+  opacity: 50%;
+}
+
+
+
+
