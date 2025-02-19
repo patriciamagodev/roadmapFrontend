@@ -12,5 +12,5 @@ El objetivo de este proyecto es ayudar a practicar las técnicas de posicionamie
 https://pmdevdatepickerui.netlify.app/
 
 **Proyecto de Roadmap.sh - Frontend.**
-https://roadmap.sh/projects/date-picker-ui
+https://roadmap.sh/projects/datepicker-ui
 

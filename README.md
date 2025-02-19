@@ -24,5 +24,5 @@ https://roadmap.sh/projects/testimonial-cards
 
 6.- Datepicker UI <br>
 https://pmdevdatepickerui.netlify.app/<br>
-https://roadmap.sh/projects/date-picker-ui
+https://roadmap.sh/projects/datepicker-ui
 
