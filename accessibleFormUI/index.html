@@ -8,33 +8,64 @@
 </head>
 <body>
     <div id="container">
-        <form action="">
+        <form action="/submit" method="post" autocomplete="on">
+            
+            <!--Campo de nombre-->
             <div>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="What should we call youe">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" 
+                placeholder="What should we call you?" aria-required="true">
+                <span class="error-message" id="name-error" aria-live="polite"></span>
             </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="john@doe.com">
+
+            <!--Campo de correo electrónico-->
+            <div class="email">
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email" 
+                placeholder="john@doe.com" aria-required="true"><br>
+                <span class="error-message" id="email-error" aria-live="polite">Email is already taken</span>
             </div>
-            <div>
-                <label for="password">Enter Password</label>
-                <input type="password" id="password" name="password" placeholder="xxxxxxxx">
+            
+            <!-- Campo de contraseña -->
+        <div>
+            <label for="password">Enter Password</label><br>
+            <div class="input-wrapper">
+                <input type="password" id="password" name="password" placeholder="xxxxxxxx" aria-required="true">
+                <button type="button" id="togglePassword" aria-label="Show password">👁️</button>
             </div>
-            <div>
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="xxxxxxxx">
+            <span class="error-message" id="password-error" aria-live="polite"></span>
+        </div>
+
+        <!-- Campo de confirmación de contraseña -->
+        <div>
+            <label for="confirmPassword">Confirm Password</label><br>
+            <div class="input-wrapper">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="xxxxxxxx" aria-required="true">
+                <button type="button" id="toggleConfirmPassword" aria-label="Show password">👁️</button>
             </div>
-            <div>
+            <span class="error-message" id="confirmPassword-error" aria-live="polite"></span>
+        </div>
+
+            <!-- Botón de envío -->
+            <div class="submit">
                 <button type="submit">Update Profile</button>
             </div>
         </form>
+
         <aside>
-            <div>
-                
+            <div class="progress-circle">
+                <div>
+                    <svg width="130" height="130">
+                        <circle r="55" cx="50%" cy="50%" pathlength="100"></circle> 
+                        <circle r="55" cx="50%" cy="50%" pathlength="100"></circle> 
+                    </svg>
+                    <span>65%</span>
+                </div>
             </div>
-            <h2>Profile Completeness</h2>
-            <div>
+            <div class="progress-text">
+                <span>Profile Completeness</span>
+            </div>
+            <div class="progress-list">
                 <p>Create Account</p>
                 <p>Update Roadmap Progress</p>
                 <p>Setup Public Profile</p>

@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +19,163 @@ body {
     align-items: center;
     flex-direction: row;
     width: 100%;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 600px;
+    padding: 20px 20px 20px 40px;
     background-color: #fff;
+    border: 3px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    gap: 20px;
+}
+label {
+    font-size: 1.6rem;
+}
+input {
+    width: 90%;
+    height: 40px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
     border-radius: 5px;
+}
+
+.email input {
+    border: 1px solid red;
+}
+#email::placeholder {
+    color: red;
+    opacity: 1;
+}
+.email .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Contenedor relativo para el input y el botón */
+.input-wrapper {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+/* Estilo del campo de entrada */
+.input-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* Espacio a la derecha para el botón */
+    padding-left: 10px; /* Espacio a la izquierda para el texto */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilo del botón de toggle */
+.input-wrapper button {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #ccc; /* Color del ícono */
+}
+
+/* Cambiar el color del ícono cuando el botón está enfocado o activo */
+.input-wrapper button:focus,
+.input-wrapper button:hover {
+    color: #007BFF; /* Color azul al enfocar o pasar el mouse */
+}
+
+
+
+.submit button {
+    width: 230px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Aside Sección*/
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    line-height: 2;
+    
+}
+circle {
+    fill: none;
+    stroke: gainsboro;
+    stroke-width: 15;
+    stroke-dasharray: 100 100;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+}
+circle:nth-child(2) {
+    stroke: DeepSkyBlue ;
+    stroke-dasharray: 0 100;
+    animation: rellenar .35s linear forwards;
+}
+.progress-circle {
+    position: relative;
+}
+.progress-circle span {
+    font-size: 2em;
+    font-weight: bold;
+    color: DeepSkyBlue;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes rellenar {
+    to {
+        stroke-dasharray: 65 100;
+    }
+}
+.progress-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress-text span {
+    margin-bottom: 20px;
+    padding-right: 1.2rem;
+    font-size: 1.2rem;
+}
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 90px 20px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-form {
-    
+.progress-list p:nth-child(1), .progress-list p:nth-child(2), .progress-list p:nth-child(3) {
+    color: gray;
+    text-decoration: line-through;
 }
