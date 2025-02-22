@@ -1,6 +1,6 @@
 # roadmapFrontend
 
-Proyectos Frontend de roadmap.sh
+Listado de Proyectos Frontend del roadmap.sh, con las respectivas soluciones que he podido desarrollar.
 
 1.- Single-Page CV <br>
 https://pmdevsimplepagecv.netlify.app/ <br>
@@ -22,7 +22,7 @@ https://roadmap.sh/projects/changelog-component
 https://pmdevtestimonialcards.netlify.app/<br>
 https://roadmap.sh/projects/testimonial-cards
 
-6.- Datepicker UI <br>
+6.- Date picker UI <br>
 https://pmdevdatepickerui.netlify.app/<br>
 https://roadmap.sh/projects/datepicker-ui
 
@@ -33,3 +33,7 @@ https://roadmap.sh/projects/accessible-form-ui
 8.- Image Grid Layout <br>
 https://pmdevimagegridlayout.netlify.app/<br>
 https://roadmap.sh/projects/image-grid
+
+9.- Tooltip UI <br>
+https://pmdevimagegridlayout.netlify.app/<br>
+https://roadmap.sh/projects/tooltip-ui
