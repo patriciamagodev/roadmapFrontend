@@ -3,3 +3,65 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:PaleTurquoise;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    color: CadetBlue;
+}
+h1 {
+    text-align: center;
+    color: CadetBlue;
+    font-weight: 900;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    padding: 15px 0px;
+    margin-top: 50px;
+    border: CadetBlue solid 3px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item {
+    text-decoration: none;
+    color: DarkTurquoise;
+    position: relative;
+}
+
+.nav-item::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color:cadetblue ;
+    color: white;
+    font-size: small;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 10px;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
