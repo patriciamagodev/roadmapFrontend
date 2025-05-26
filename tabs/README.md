@@ -11,7 +11,7 @@ Este proyecto nos ayudará a practicar la selección de elementos con JavaScript
 <br>
 
 **Visualizar Proyecto**<br>
-https://pmdevtaps.netlify.app/
+https://pmdevtabs.netlify.app/
 
 **Proyecto de Roadmap.sh - Frontend.**<br>
 https://roadmap.sh/projects/simple-tabs
